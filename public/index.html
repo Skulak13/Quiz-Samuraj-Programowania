@@ -2,16 +2,26 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> /* Used for Internet Explorer compatibility; safe to omit in modern apps */
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Used for Internet Explorer compatibility; safe to omit in modern apps --> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Koderzy</title>
 </head>
 <body>
     <h1>Koderzy</h1>
-    <h2>Poprawne odpowiedzzi: <span id="good answears"></span></h2>
+    <h2>Poprawne odpowiedzi: <span id="goodAnswears"></span></h2>
+    <div id="game-board">
+        <div id="tip"></div>
+
+        <button id="callToAFriend">Tek. do przyjaciela</button>
+        <button id="askTheAudience">Pytanie do publicznosci</button>
+        <button id="fiftyFifty">Pół na pół</button>
+
     <div id="question"></div>
-    <button id="answer1"></button id="answer2"><button id="answer3"></button><button id="answer4"
-    ></button>
+        <button class="answer-btn" id="answer1" data-answer="0"></button>
+        <button class="answer-btn" id="answer2" data-answer="1"></button>
+        <button class="answer-btn" id="answer3" data-answer="2"></button>
+        <button class="answer-btn" id="answer4" data-answer="3"></button>
+    </div>
 
     <script src="script.js"></script>
 </body>
